@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ngContextMenu</artifactId>
-    <version>0.7.5-SNAPSHOT</version>
+    <version>0.7.5</version>
     <name>ngContextMenu</name>
     <description>WebJar for ngContextMenu</description>
     <url>http://webjars.org</url>
@@ -35,8 +35,8 @@
     <developers>
         <developer>
             <id>playtowork</id>
-            <name></name>
-            <email></email>
+            <name />
+            <email />
         </developer>
     </developers>
 
@@ -52,7 +52,7 @@
         <url>http://github.com/webjars/ngContextMenu</url>
         <connection>scm:git:https://github.com/webjars/ngContextMenu.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/ngContextMenu.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>ngContextMenu-0.7.5</tag>
     </scm>
     
     <dependencies>
@@ -89,13 +89,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}" />
                                 </move>
                             </target>
                         </configuration>
