@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ngContextMenu</artifactId>
-    <version>0.7.5</version>
+    <version>0.7.6-SNAPSHOT</version>
     <name>ngContextMenu</name>
     <description>WebJar for ngContextMenu</description>
     <url>http://webjars.org</url>
@@ -52,7 +52,7 @@
         <url>http://github.com/webjars/ngContextMenu</url>
         <connection>scm:git:https://github.com/webjars/ngContextMenu.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/ngContextMenu.git</developerConnection>
-        <tag>ngContextMenu-0.7.5</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <dependencies>
